@@ -1,0 +1,112 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arima', cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap');
+body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 10px;
+    height: 850px;
+    width: 500px;  
+     
+}
+
+.box {
+    
+    background: #98fb98;
+    border-radius: 20%;
+
+}
+
+  .board:hover{
+    cursor: pointer;
+  }
+  #sc{
+    grid-column-start: span 5;
+    background: linear-gradient(to bottom right, #ddafca, #a5faf3);
+    border-radius: 90px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    line-height: 60px;
+    height: 60px;
+    font-size: 30px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 49px;
+  }
+  
+  
+  #play{
+    color: purple;
+    grid-column-start: span 5;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+
+
+#easy, #hard,#medium{
+  background: linear-gradient(to bottom right, #acf72a, #5de368);
+  border-radius: 60px;
+  color: white;
+  text-align: left;
+  align-items: left;
+  line-height: 60px;
+  border: transparent;
+  font-size: 30px;
+  font-family: 'Arima', cursive;
+  margin-top: 25px;
+  cursor: pointer;
+  border: #98fb98 1px solid;
+  padding: 1px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+ 
+}
+
+
+#level{
+  display: flex;
+  justify-content: space-between;
+  grid-column-start: span 5;
+
+}
+#last{
+  display: flex;
+  justify-content: space-between;
+  grid-column-start: span 5;
+}
+.bt{
+  
+  background: linear-gradient(to bottom right, #acf72a, #5de368);
+  border-radius: 60px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  line-height: 60px;
+  border: transparent;
+  font-size: 30px;
+  font-family: 'Arima', cursive;
+  margin-top: 25px;
+  cursor: pointer;
+  border: #98fb98 1px solid;
+  width: 750px;
+  margin: 10px;
+}
